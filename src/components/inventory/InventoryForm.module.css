@@ -1,0 +1,17 @@
+.form { max-width: 480px; display: flex; flex-direction: column; gap: 20px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-weight: 600; font-size: 13px; color: #333; }
+.field input, .field textarea {
+    padding: 10px 12px; border: 1.5px solid #ddd; border-radius: 8px;
+    font-size: 14px; outline: none; transition: border .2s; font-family: inherit;
+}
+.field input:focus, .field textarea:focus { border-color: #1a1a2e; }
+.inputErr { border-color: #c62828 !important; }
+.err { color: #c62828; font-size: 12px; }
+.preview { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; margin-top: 8px; }
+.submit {
+    padding: 12px; background: #1a1a2e; color: #fff;
+    border: none; border-radius: 8px; font-size: 15px;
+    cursor: pointer; font-family: inherit; font-weight: 600;
+}
+.submit:disabled { opacity: .6; cursor: not-allowed; }
