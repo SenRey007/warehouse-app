@@ -1,13 +1,30 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import InventoryTable from '../components/inventory/InventoryTable'
+import ConfirmModal from '../components/inventory/ConfirmModal'
+import { deleteInventory } from '../services/inventoryApi'
 import { useInventory } from '../store/InventoryContext'
 
 export default function AdminInventory() {
     const { items, loading, error, fetchInventory } = useInventory()
+    const [toDelete, setToDelete] = useState(null)
+    const [deleting, setDeleting] = useState(false)
     const navigate = useNavigate()
 
     useEffect(() => { fetchInventory() }, [fetchInventory])
+
+    const handleDelete = async () => {
+        try {
+            setDeleting(true)
+            await deleteInventory(toDelete.id)
+            setToDelete(null)
+            await fetchInventory()
+        } catch (e) {
+            alert(e.message)
+        } finally {
+            setDeleting(false)
+        }
+    }
 
     return (
         <div>
@@ -26,7 +43,13 @@ export default function AdminInventory() {
                 error={error}
                 onView={id => navigate(`/admin/${id}`)}
                 onEdit={id => navigate(`/admin/${id}/edit`)}
-                onDelete={item => alert(`Видалення буде в наступному коміті`)}
+                onDelete={item => setToDelete(item)}
+            />
+            <ConfirmModal
+                item={toDelete}
+                onConfirm={handleDelete}
+                onCancel={() => setToDelete(null)}
+                loading={deleting}
             />
         </div>
     )

@@ -1,0 +1,16 @@
+.overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,.5);
+    display: flex; align-items: center; justify-content: center; z-index: 1000;
+}
+.modal {
+    background: #fff; border-radius: 16px; padding: 32px;
+    max-width: 400px; width: 90%;
+    box-shadow: 0 20px 60px rgba(0,0,0,.2);
+}
+.modal h3 { margin: 0 0 12px; font-size: 18px; }
+.modal p { margin: 0 0 8px; }
+.warn { color: #888; font-size: 13px; }
+.btns { display: flex; gap: 12px; justify-content: flex-end; margin-top: 24px; }
+.cancel  { padding: 10px 20px; border: 1.5px solid #ddd; background: #fff; border-radius: 8px; cursor: pointer; font-family: inherit; }
+.confirm { padding: 10px 20px; background: #c62828; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-family: inherit; }
+.confirm:disabled { opacity: .6; }
