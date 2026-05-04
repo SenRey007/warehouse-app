@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3001'
+const BASE_URL = 'http://localhost:5174'
 
 export async function getInventory() {
     const res = await fetch(`${BASE_URL}/inventory`)
