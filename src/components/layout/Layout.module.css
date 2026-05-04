@@ -1,0 +1,12 @@
+.wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+.nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 56px;
+    background: #1a1a2e; color: #fff;
+}
+.logo { font-weight: 700; font-size: 18px; }
+.links { display: flex; gap: 20px; }
+.links a { color: #aaa; text-decoration: none; font-size: 14px; }
+.links a:hover { color: #fff; }
+.links .active { color: #fff; font-weight: 600; }
+.main { flex: 1; padding: 32px 24px; max-width: 1200px; margin: 0 auto; width: 100%; }
