@@ -1,0 +1,22 @@
+.tableWrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table th {
+    background: #f5f5f5; padding: 12px 16px;
+    text-align: left; font-weight: 600; border-bottom: 2px solid #e0e0e0;
+}
+.table td { padding: 12px 16px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+.table tr:hover { background: #fafafa; }
+.thumb { width: 56px; height: 56px; object-fit: cover; border-radius: 8px; background: #eee; display: block; }
+.name { font-weight: 500; max-width: 200px; }
+.desc { color: #666; max-width: 300px; font-size: 13px; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.actions button {
+    padding: 6px 12px; border: none; border-radius: 6px;
+    cursor: pointer; font-size: 12px; font-weight: 500;
+}
+.btnView   { background: #e8f4fd; color: #1a6fa3; }
+.btnEdit   { background: #fff8e6; color: #b07d00; }
+.btnDelete { background: #fdecea; color: #c62828; }
+.actions button:hover { opacity: .8; }
+.state      { padding: 60px; text-align: center; color: #888; font-size: 15px; }
+.stateError { padding: 60px; text-align: center; color: #c62828; font-size: 15px; }
