@@ -10,5 +10,11 @@
     "inventory_name": "gfh",
     "description": "fghfgh",
     "photo": "http://localhost:3000/uploads/1777927824866.jpg"
+  },
+  {
+    "id": "1777932981111",
+    "inventory_name": "длдл",
+    "description": "щшл",
+    "photo": "http://localhost:3000/uploads/1777932981106.jpg"
   }
 ]

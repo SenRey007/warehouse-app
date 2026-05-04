@@ -1,0 +1,22 @@
+.back { background: none; border: none; color: #666; cursor: pointer; margin-bottom: 16px; display: block; font-size: 14px; }
+.title { margin-bottom: 24px; }
+.msg { margin-bottom: 16px; font-weight: 500; }
+.section {
+    background: #fff; border: 1px solid #e0e0e0; border-radius: 12px;
+    padding: 24px; margin-bottom: 20px; max-width: 480px;
+}
+.sectionTitle { font-size: 13px; font-weight: 700; margin: 0 0 18px; color: #333; text-transform: uppercase; letter-spacing: .04em; }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.field label { font-size: 13px; font-weight: 600; color: #555; }
+.field input, .field textarea {
+    padding: 9px 12px; border: 1.5px solid #ddd; border-radius: 8px;
+    font-size: 14px; outline: none; font-family: inherit;
+}
+.field input:focus, .field textarea:focus { border-color: #1a1a2e; }
+.preview { width: 100px; height: 100px; object-fit: cover; border-radius: 8px; margin-top: 8px; }
+.btn {
+    padding: 10px 20px; background: #1a1a2e; color: #fff;
+    border: none; border-radius: 8px; cursor: pointer;
+    font-size: 14px; font-weight: 600; font-family: inherit;
+}
+.btn:disabled { opacity: .6; cursor: not-allowed; }
