@@ -22,10 +22,13 @@ export default function InventoryTable({ items, onView, onEdit, onDelete, loadin
                     <tr key={item.id}>
                         <td>
                             <img
-                                src={getPhotoUrl(item.id)}
+                                src={item.photo} // Використовуємо пряме посилання від сервера[cite: 1]
                                 alt={item.inventory_name}
                                 className={styles.thumb}
-                                onError={e => { e.target.style.display = 'none' }}
+                                onError={e => {
+                                    // Якщо посилання біте, показуємо заглушку замість того, щоб ховати картинку
+                                    e.target.src = 'https://placehold.co/60x60?text=Error';
+                                }}
                             />
                         </td>
                         <td className={styles.name}>{item.inventory_name}</td>

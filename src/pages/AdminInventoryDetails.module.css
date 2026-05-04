@@ -1,0 +1,7 @@
+.wrap { max-width: 600px; }
+.back { background: none; border: none; color: #666; cursor: pointer; font-size: 14px; margin-bottom: 20px; display: block; }
+.back:hover { color: #333; }
+.photo { width: 100%; max-height: 400px; object-fit: contain; border-radius: 12px; background: #f5f5f5; margin-bottom: 24px; display: block; }
+.title { font-size: 24px; margin-bottom: 12px; }
+.desc { color: #555; line-height: 1.7; font-size: 15px; }
+.editBtn { margin-top: 24px; padding: 10px 24px; background: #1a1a2e; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; }

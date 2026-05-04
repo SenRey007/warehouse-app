@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "inventory_name": "Зразок товару",
+    "description": "Це збережеться",
+    "photo": ""
+  },
+  {
+    "id": "1777927824872",
+    "inventory_name": "gfh",
+    "description": "fghfgh",
+    "photo": "http://localhost:3000/uploads/1777927824866.jpg"
+  }
+]
