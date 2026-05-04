@@ -1,20 +1,8 @@
 [
   {
-    "id": "1",
-    "inventory_name": "Зразок товару",
-    "description": "Це збережеться",
-    "photo": ""
-  },
-  {
-    "id": "1777927824872",
-    "inventory_name": "gfh",
-    "description": "fghfgh",
-    "photo": "http://localhost:3000/uploads/1777927824866.jpg"
-  },
-  {
-    "id": "1777932981111",
-    "inventory_name": "пупупу",
-    "description": "Ням\n",
-    "photo": "http://localhost:3000/uploads/1777933316099.webp"
+    "id": "1777933799369",
+    "inventory_name": "Гвинтик",
+    "description": "маленький",
+    "photo": "http://localhost:3000/uploads/1777933799368.png"
   }
 ]
