@@ -1,0 +1,22 @@
+.empty { text-align: center; padding: 80px 20px; color: #888; }
+.emptyIcon { font-size: 52px; margin-bottom: 12px; }
+.empty h2 { font-size: 18px; margin: 0 0 8px; color: #444; }
+.empty p  { font-size: 14px; margin: 0; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+@media (max-width: 480px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+
+.card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
+.img  { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+.info { padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.name { font-weight: 600; font-size: 13px; color: #1a1a2e; flex: 1; }
+.remove {
+    background: none; border: none; color: #c62828;
+    cursor: pointer; font-size: 12px; font-weight: 500;
+    white-space: nowrap; font-family: inherit;
+}
+.remove:hover { text-decoration: underline; }
